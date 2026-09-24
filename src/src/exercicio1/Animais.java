@@ -1,6 +1,7 @@
 package exercicio1;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Animais {
     private String[] animais= {
@@ -31,8 +32,11 @@ public class Animais {
             "Vaca"
     };
 
-    int[] bilhete = new int[5];
+    int[] bilhete;
 
+    public Animais(){
+
+    }
 
     public String[] getAnimais() {
         return animais;
@@ -44,10 +48,6 @@ public class Animais {
 
     public int[] getBilhete() {
         return bilhete;
-    }
-
-    public void setBilhete(int[] bilhete) {
-        this.bilhete = bilhete;
     }
 
     public String pegaOBixo(int numero){
@@ -62,9 +62,32 @@ public class Animais {
         }
     }
 
+    public void fazerAposta(int[] bilhete){
+        this.bilhete = bilhete;
+    }
 
+    public void fazerApostaAleatoria(){
+        Random random = new Random();
+        for (int i =0; i < 5; i++){
+            bilhete[i] = random.nextInt(26);
+        }
 
+    }
 
+    public void imprimeAposta(int[] aposta, String[] animais) {
+        Arrays.sort(aposta);
+        String impressos = "";
+
+        for (int i = 0; i < aposta.length; i++) {
+            int indice = aposta[i] - 1;
+            String animal = animais[indice];
+
+            if (!impressos.contains(animal)) {
+                System.out.print(animal + " ");
+                impressos += animal + " ";
+            }
+        }
+    }
 
 
 }
