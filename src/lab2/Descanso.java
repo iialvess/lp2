@@ -6,7 +6,7 @@ public class Descanso {
 
     public Descanso() {
         this.horasDeDescanso = 0;
-        this.numeroDeSemana = 0;
+        this.numeroDeSemana = 1;
     }
 
 
