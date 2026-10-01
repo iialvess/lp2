@@ -50,7 +50,7 @@ public class RegistroResumos {
 
     public boolean temResumo(String tema) {
         for (int i = 0; i < this.quantidadeAtual; i++) {
-            if (this.totalResumos[i] != null && this.totalResumos[i].getTema().equals(tema)) {
+            if (totalResumos[i].getTema().equals(tema)) {
                 return true;
             }
         }
