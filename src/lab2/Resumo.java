@@ -12,7 +12,6 @@ public class Resumo {
     public String getTema() {
         return this.tema;
     }
-
     public String getConteudo() {
         return this.conteudo;
     }

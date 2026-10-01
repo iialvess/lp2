@@ -9,7 +9,6 @@ public class Descanso {
         this.numeroDeSemana = 1;
     }
 
-
     public void defineHorasDescanso(int valor) {
         this.horasDeDescanso = valor;
     }

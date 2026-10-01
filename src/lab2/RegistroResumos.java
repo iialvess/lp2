@@ -38,7 +38,6 @@ public class RegistroResumos {
     public String imprimeResumos() {
         int qntdResumos = this.conta();
         String impressao = "- " + qntdResumos + " resumo(s) cadastrado(s)\n-";
-
         for (int i = 0; i < qntdResumos; i++) {
             if (i != qntdResumos - 1) {
                 impressao += " " + this.totalResumos[i].getTema() + " |";

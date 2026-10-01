@@ -20,7 +20,6 @@ public class RegistroTempoOnline {
     public boolean atingiuMetaTempoOnline(){
         return tempoInvestidoOnline >= tempoEsperado;
     }
-
     @Override
     public String toString() {
         return nomeDisciplina + " " + tempoInvestidoOnline + "/" + tempoEsperado;
