@@ -24,7 +24,7 @@ public class Coisa {
         System.out.println(descanso.getStatusGeral());
     }
     private static void registrarTempoOnline() {
-        RegistroTempoOnline tempoLP2 = new RegistroTempoOnline("LP2", 30);
+        RegistroTempoOnline tempoLP2 = new RegistroTempoOnline(30, "LP2");
         tempoLP2.adicionaTempoOnline(10);
         System.out.println(tempoLP2.atingiuMetaTempoOnline());
         tempoLP2.adicionaTempoOnline(10);
