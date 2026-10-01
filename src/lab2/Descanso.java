@@ -19,6 +19,7 @@ public class Descanso {
         this.numeroDeSemana = valor;
     }
 
+
     public String getStatusGeral() {
         if (this.numeroDeSemana == 0) {
             return "cansado";

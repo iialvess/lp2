@@ -16,6 +16,7 @@ public class Disciplina {
         this.horasDeEstudo += horas;
     }
 
+
     public void cadastraNota(int nota, double valorNota) {
         if (nota == 1) {
             this.nota1 = valorNota;

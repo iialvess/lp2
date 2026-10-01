@@ -16,7 +16,6 @@ public class Resumo {
     public String getConteudo() {
         return this.conteudo;
     }
-
     @Override
     public String toString() {
         return this.tema + ": " + this.conteudo;
